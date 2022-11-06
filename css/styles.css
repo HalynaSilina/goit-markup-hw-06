@@ -15,7 +15,7 @@
   --project-border-color: #eeeeee;
   --button-order-active: #188ce8;
   --work-text-bg: rgba(47, 48, 58, 0.8);
-  --clients-box-border: #afb1b8;
+  --primary-icons-color: #afb1b8;
   --button-shadow-color: rgba(0, 0, 0, 0.15);
   --follow-link-bg: rgba(255, 255, 255, 0.1);
   --form-title-color: rgba(33, 33, 33, 1);
@@ -292,10 +292,6 @@ svg {
 
   background-color: var(--secondary-bg-color);
 }
-.feature-icon {
-  width: 70px;
-  height: 70px;
-}
 /* Work */
 .work-list {
   display: flex;
@@ -354,26 +350,19 @@ svg {
 .team-social {
   display: flex;
   margin-top: 16px;
-  margin-left: -10px;
-  margin-right: auto;
-
+  justify-content: center;
   align-items: center;
-}
-.team-social .item {
-  flex-basis: calc(100% / 4 - 10px);
-  margin-left: 10px;
+  gap: 10px;
 }
 .team-link {
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 12px;
-  padding-left: 12px;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
-  color: var(--primary-text-color);
+  color: var(--primary-icons-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .team-link:hover,
@@ -382,9 +371,6 @@ svg {
   background-color: var(--primary-accent-color);
 }
 .team-icon {
-  width: 20px;
-  height: 20px;
-
   fill: currentColor;
 }
 /* Clients */
@@ -398,12 +384,13 @@ svg {
 }
 .clients-link {
   display: flex;
-  padding: 15px 31px;
+  width: 170px;
+  height: 92px;
   justify-content: center;
   align-items: center;
 
-  color: var(--primary-text-color);
-  border: 1px solid var(--clients-box-border);
+  color: var(--primary-icons-color);
+  border: 1px solid var(--primary-icons-color);
   border-radius: 4px;
 
   transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
@@ -414,9 +401,6 @@ svg {
   border-color: var(--primary-accent-color);
 }
 .clients-icon {
-  width: 106px;
-  height: 60px;
-
   fill: currentColor;
 }
 /* Footer */
@@ -470,19 +454,18 @@ svg {
 }
 .follow-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: auto;
-  margin-left: -10px;
+  gap: 10px;
 }
 .follow-list .item {
   flex-basis: calc(100% / 4 - 10px);
-  margin-left: 10px;
 }
 .follow-link {
   display: flex;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 12px;
-  padding-left: 12px;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
 
@@ -497,9 +480,6 @@ svg {
   background-color: var(--primary-accent-color);
 }
 .follow-icon {
-  width: 20px;
-  height: 20px;
-
   fill: currentColor;
 }
 .follow {
@@ -681,7 +661,7 @@ svg {
 .form-field .form-input:hover,
 .form-field .form-input:focus,
 .form-field .form-input:active {
-  color: var(--primary-accent-color);
+  color: var(--primary-black-color);
   border-color: var(--primary-accent-color);
   outline-color: var(--primary-accent-color);
 }
@@ -707,7 +687,7 @@ svg {
   color: var(--placeholder-text-color);
 }
 .form-field .form-textarea:focus {
-  color: var(--primary-accent-color);
+  color: var(--primary-black-color);
 }
 .form-icon {
   position: absolute;
