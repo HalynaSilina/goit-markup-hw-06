@@ -566,7 +566,10 @@ svg {
   height: 100%;
 
   background-color: var(--backdrop-bg-color);
-  transition: opacity 250ms var(--timing-function);
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms var(--timing-function), visability 250ms var(--timing-function) 250ms;
 }
 .backdrop.is-hidden {
   opacity: 0;
